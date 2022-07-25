@@ -1,9 +1,0 @@
-- Mostra quantos mosquitos matou ----FEITO----
-
-- Tempo de jogo diferente de acordo com as dificuldades ----FEITO----
-
-- Ao final do jogo, ao perder ou ganhar, o jogador pode reiniciar o jogo no mesmo nivel ou pode ir para a tela inicial selecionar outro nível. ----FEITO----
-
-- Adaptar para mobile ----FEITO----
-
-- Fazer um modo arcade que quanto mais pontos mais rápido as mosca aparecem. ----FEITO----
