@@ -1,0 +1,75 @@
+body {
+    background-color: rgba(0, 0, 0, 0.897) !important;
+}
+
+#projeto {
+    font-size: 105px;
+    font-weight: 700;
+    color: rgb(255, 255, 0);
+}
+#nome_home {
+    color: white;
+    font-size: 45px;
+    margin-top: -20px;
+}
+#home {
+    height: 100vh;
+}
+/*----Seta----*/
+#seta {
+    height: 50px;
+    width: auto;
+    animation: seta 2.5s infinite;
+    animation-timing-function: reverse;
+}
+
+@keyframes seta {
+    from {
+        margin-top: 10%;
+    }
+
+    50% {
+        margin-top: 15%;
+    }
+
+    to {
+        margin-top: 10%;
+    }
+}
+
+.btn-amarelo {
+    background-color: rgb(223, 223, 0) !important;
+}
+
+.cards {
+    justify-content: center;
+    display: flex;
+}
+
+
+
+/*--responsividade--*/
+@media(max-width: 576px) {
+    #projeto {
+        font-size: 55px;
+        font-weight: 600;
+    }
+    #nome_home {
+        font-size: 35px;
+        margin-top: -15px;
+    }
+
+    @keyframes seta {
+        from {
+            margin-top: 50%;
+        }
+    
+        50% {
+            margin-top: 58%;
+        }
+    
+        to {
+            margin-top: 50%;
+        }
+    }
+}
