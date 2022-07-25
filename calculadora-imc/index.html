@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>.disclaimer {display: none !important;}</style>
+    <script src="script.js"></script>
+    <title>Calculadora IMC</title>
+</head>
+<body id="body" style="overflow-x: hidden;">
+    <div class="container">
+        <div class="box">
+            <h3>Calcular IMC</h3>
+            
+            <label for="idade">Idade:</label>
+            <input type="number" class="form-control" id="idade" placeholder="Ex:35">
+
+            <label for="altura">Altura em cm:</label>
+            <input type="number" id="altura" class="form-control" placeholder="Ex:167">
+    
+            <label for="peso">Peso:</label>
+            <input type="number" class="form-control" id="peso" placeholder="Ex:65.4">
+
+            <input type="submit" value="Calcular" id="botao" onclick="calcular()">
+        </div>
+        
+        <div class="box" id="div-resultado">
+            <p id="p">Seu IMC é: 24.3 kg/m2</p>
+
+            <table id="table">
+                <tr id="abaixo-do-peso">
+                    <td>Abaixo do peso</td>
+                    <td>IMC < 18,5</td>
+                </tr>
+                <tr id="normal">
+                    <td>Normal</td>
+                    <td>18,5 - 24,9</td>
+                </tr>
+                <tr id="sobrepeso">
+                    <td>Sobrepeso</td>
+                    <td>25 - 29,9</td>
+                </tr>
+                <tr id="obeso">
+                    <td>Obeso</td>
+                    <td>IMC > 30</td>
+                </tr>
+              </table>
+
+              <input type="submit" value="Calcular novamente" id="botao" onclick="recarregar()">
+        </div>
+    </div>
+    <footer style="display: flex; justify-content: center; position: absolute;width: 100%;bottom: 0px;">
+        <p class="text-center" style="color: rgba(110, 108, 108, 0.801);">Tiagol09 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
